@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mizcausevic-dev.github.io/vwo-tableau-powerbi-decision-evidence-room/sitemap.xml

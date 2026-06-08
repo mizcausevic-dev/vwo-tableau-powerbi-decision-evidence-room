@@ -21,8 +21,10 @@ for (const signal of requiredSignals) {
   }
 }
 
-if (!page.includes('Where are we exposed')) {
-  throw new Error('Missing board question framing');
+for (const required of ['Decision evidence', 'Related surfaces', 'data-filter', 'Footer links', 'Where are we exposed']) {
+  if (!page.includes(required)) {
+    throw new Error('Missing page capability: ' + required);
+  }
 }
 
 console.log('vwo-tableau-powerbi-decision-evidence-room: validation passed');
